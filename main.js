@@ -7,23 +7,24 @@ function main() {
 }
 
 function addEventListeners() {
- headerBackgroundChange();
+  headerBackgroundChange();
+  arrowBacktoTop();
 }
 
 function SwiperSlider() {
   const swiper = new Swiper(".swiper", {
-    effect: 'creative',
+    effect: "creative",
     creativeEffect: {
-     prev: {
-      translate: [0, 0, -400],
-     },
-     next: {
-      translate: ['100%', 0, 0],
-     },
+      prev: {
+        translate: [0, 0, -400],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
     },
     autoplay: {
       delay: 4500,
-      disableOnInteraction: false,  
+      disableOnInteraction: false,
     },
     direction: "horizontal",
     loop: true,
@@ -52,10 +53,17 @@ function logoReturnHome() {
 }
 
 function headerBackgroundChange() {
- let header = document.querySelector('header')
-window.addEventListener('scroll', () => {
-  header.classList.toggle('header-active', window.scrollY > 0);
-});
+  let header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("header-active", window.scrollY > 0);
+  });
+}
+
+function arrowBacktoTop() {
+  let arrowScrollTop = document.querySelector(".scroll-top");
+  window.addEventListener("scroll", () => {
+    arrowScrollTop.classList.toggle("scroll-active", window.scrollY >= 400);
+  });
 }
 
 // window.onscroll = function () {
