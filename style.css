@@ -87,5 +87,77 @@ header {
     background: var(--container-color);
     transition: 0.3s all linear;
   }
+
+  /* HAMBURGER MENU ICON */
+.hamburger-menu-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+  transition: 0.3s;
+}
+
+.hamburger-menu-icon div {
+  display: block;
+  background: var(--text-color);
+  height: 2px;
+  width: 24px;
+}
+
+/* HOME */
+
+.home {
+min-height: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 7rem;
+}
+
+.home-content {
+position: relative;
+max-width: 600px;
+width: 100%;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.home-img {
+  width: 10rem;
+  height: 15rem;
+  border-radius: 15%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.home-img {
+  width: 10rem;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-text h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--main-color);
+}
   
     
