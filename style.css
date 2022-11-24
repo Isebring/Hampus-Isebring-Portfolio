@@ -345,7 +345,8 @@ transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0.5rem 0;
-  color: var(--body-color);
+  color: var(--accent-color);
+  font-family: 'Manrope', sans-serif;
 }
 
 .skills-box p {
