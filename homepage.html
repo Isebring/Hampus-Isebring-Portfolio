@@ -8,13 +8,16 @@
 
   <!--CSS FILES-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./typewriter-text.css".css">
   <link rel="stylesheet" href="./style.css">
 
   <!--JQUERY FILE-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <!--JAVASCRIPT FILES-->
   <script src="./main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -71,5 +74,55 @@
    </div>
   </section>
 
+  <!--SWIPER SLIDER-->
+<section class="swiper container= "slider">
+  <!-- <h2 class="heading">A gallery to highlight me</h2> -->
+  
+  <div class="swiper">
+  
+    <div class="swiper-wrapper">
+    
+      <div class="swiper-slide">Me & my brother in Klässbol
+        <img src="./imgs/brothers.jpg" width="600px">
+      </div>
+      <div class="swiper-slide">Klässbol, Värmland
+        <img src="./imgs/klassbol.jpg" width="600px">
+      </div>
+      <div class="swiper-slide">Ön, Halmstad
+        <img src="./imgs/ön-halmstad.jpg" width="600px">
+      </div>
+    </div>
+  
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <div class="swiper-scrollbar"></div>
+  </section>
+
+  <!--ABOUT-->
+<section class="about container" id="about">
+  <!--HEADING-->
+  <h2 class="heading">About Me</h2>
+  <!--ABOUT CONTENT-->
+  <div class="about-content">
+   <div class="about-data">
+    <span class="heading-font">Things I like</span> 
+    <h2>I like gaming, our nature, <br> playing the guitar, and animals.</h2>
+    <a href="något.rtf" class="btn" download="">
+      Download CV
+      <i class='bx bx-download'></i>
+    </a>
+   </div>
+   <div class="about-text">
+     <p>Hi! I am Hampus Isebring. A Front End Developer Student, Junior UX | UI Designer & Junior Service Designer.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae consectetur iure quisquam illum vero facilis suscipit dolores molestiae, rem commodi ratione necessitatibus magni dicta sequi corrupti amet qui id.</p>
+     <p>Contact me for further information or just to chat.</p>
+   </div>
+  </div>
+ </section>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>
