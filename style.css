@@ -22,6 +22,7 @@ scroll-padding-top: 2rem;
 /* REUSABLE CSS */
 .heading-font {
   font-family: 'Manrope', sans-serif;
+  font-weight: 700;
 }
 .paragraph-color {
   color: white;
@@ -62,6 +63,31 @@ p {
   width: 100%;
 }
 
+/* SCROLL TOP */
+.scroll-top {
+  position: fixed;
+  bottom: -100%;
+  right: 1.5rem;
+}
+
+.scroll-top .bx {
+padding: 8px;
+font-size: 1.4rem;
+color: var(--body-color);
+background: var(--box-color);
+border-radius: 1.5rem;
+}
+
+.scroll-top .bx:hover {
+  background: var(--accent-color);
+  transition: 0.3s;
+}
+
+.scroll-active{
+  bottom: 2rem;
+  transition: 0.3s;
+}
+
 /* HEADER */
 header {
   position: fixed;
@@ -74,6 +100,7 @@ header {
 .header-active {
  background: rgba(201, 198, 198, 0.9);
  transition: 0.4s;
+ color: white;
 }
 
 .nav {
