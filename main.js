@@ -1,40 +1,13 @@
 window.addEventListener("DOMContentLoaded", main);
 
 function main() {
-  hamburgerMenuAnimation();
-  topFunction();
-  scrollFunction();
+  addEventListeners();
   SwiperSlider();
+  hamburgerMenuAnimation();
 }
 
-function hamburgerMenuAnimation() {
-  let menu = document.querySelector(".hamburger-menu-icon");
-
-  menu.onclick = () => {
-    menu.classList.toggle("move");
-  };
-}
-
-function logoReturnHome() {
-  location.href = "homepage.html";
-}
-
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  let toTopButton = document.getElementById("myBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    toTopButton.style.display = "block";
-  } else {
-    toTopButton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.documentElement.scrollTop = 0;
-  console.log("hej");
+function addEventListeners() {
+ headerBackgroundChange();
 }
 
 function SwiperSlider() {
@@ -65,6 +38,43 @@ function SwiperSlider() {
     },
   });
 }
+
+function hamburgerMenuAnimation() {
+  let menu = document.querySelector(".hamburger-menu-icon");
+
+  menu.onclick = () => {
+    menu.classList.toggle("move");
+  };
+}
+
+function logoReturnHome() {
+  location.href = "homepage.html";
+}
+
+function headerBackgroundChange() {
+ let header = document.querySelector('header')
+window.addEventListener('scroll', () => {
+  header.classList.toggle('header-active', window.scrollY > 0);
+});
+}
+
+// window.onscroll = function () {
+//   scrollFunction();
+// };
+
+// function scrollFunction() {
+//   let toTopButton = document.getElementById("myBtn");
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     toTopButton.style.display = "block";
+//   } else {
+//     toTopButton.style.display = "none";
+//   }
+// }
+
+// function topFunction() {
+//   document.documentElement.scrollTop = 0;
+//   console.log("hej");
+// }
 
 // function reRunTypewriter() {
 //   typeWriter = document.querySelector("#typewriter");
