@@ -12,16 +12,13 @@
   <link rel="stylesheet" href="./typewriter-text.css".css">
   <link rel="stylesheet" href="./style.css">
 
-  <!--JQUERY FILE-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
   <!--JAVASCRIPT FILES-->
   <script src="./main.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <!--SCROLL TOP-->
-<a href="#home" class="scroll-top">
+  <!--SCROLL BACK TO TOP-->
+<a href="#home" class="scroll-back-to-top">
   <i class="bx bx-up-arrow-alt"></i>
 </a>
 
@@ -29,20 +26,20 @@
 
 <header>
   <!--NAV-->
-  <div class="nav container">
+  <div class="nav container flex">
     <!--LOGO-->
-    <img src="./imgs/logo.png" onclick= logoReturnHome() class="logo" alt="logo"></a>
+    <img src="./imgs/logo.png" onclick= logoReturnHome() class="logo" alt="logotype of the initials HI, which stands for Hampus Isebring"></a>
     <!--NAVBAR-->
-    <nav class="navbar">
+    <nav class="navbar flex">
     <li><a href="#home" class="nav-link">Home</a></li>
     <li><a href="#about" class="nav-link">About</a></li>
     <li><a href="#skills" class="nav-link">Skills</a></li>
     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li><a href="#footer" class="nav-link">Contact</a></li>
     </nav>
 
       <!--HAMBURGER MENU ICON-->
-      <div class="hamburger-menu-icon">
+      <div class="hamburger-menu-icon flex">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -51,14 +48,14 @@
       </div>
     </header> 
 
-  <!--HOME-->
-<section class="home container" id="home">
-  <div class="home-content">
+  <!--HOMEPAGE MAIN-->
+<section class="home container flex" id="home">
+  <div class="homepage-content flex">
    <div class="home-img">
-     <img src="./imgs/hampus.jpg" alt="A picture of me">
+     <img src="./imgs/hampus.jpg" alt="A picture of me, Hampus.">
    </div>
-    <div class="home-text">
-      <h3>Hello there</h3>
+    <div class="homepage-text flex">
+      <h3 class="flex">Hello there</h3>
       <h2>I am <span class="color">Hampus</span></h2>
       <div id="stop-cursor">
        <h4 id="typewriter">I am a front end dev student.</h4>
@@ -66,10 +63,10 @@
       </div>
       <p>
         I am <span class="color"> a front end developer student</span> at Medieinstitutet in Gothenburg. I am also a newly graduated <span class="color">junior UX | UI designer</span> from Halmstad University. I have a strong passion for creating digital solutions that <span class="color">supports people in their lives.</span>
-        <br> Here follows some pictures <span class="color">from my life.</span>
+        <br><br> Here follows some pictures <span class="color">from my life.</span>
        </p>
        <!--SOCIAL ICONS-->
-       <div class="social">
+       <div class="social flex">
         <a href="#"><i class='bx bxl-discord-alt'></i></a>
         <a href="#"><i class='bx bxl-linkedin' ></i></a>
         <a href="#"><i class='bx bxl-github' ></i></a>
@@ -106,23 +103,27 @@
   </section>
 
   <!--ABOUT-->
-<section class="about container" id="about">
+<section class="about-me container" id="about">
   <!--HEADING-->
   <h2 class="heading">About Me</h2>
   <!--ABOUT CONTENT-->
   <div class="about-content">
    <div class="about-data">
-    <span class="heading-font">Things I like</span> 
-    <h2>I like gaming, our nature, <br> playing the guitar, and animals.</h2>
+    <h2 class="heading-font">Things I like</h2> 
+    <h3 class="paragraph-font">I enjoy gaming 🎮<br> our nature 🌲 <br> playing the guitar 🎸<br> and animals 🐾.</h3>
+    <br>
+    <h3 class="paragraph-font">Music is a big passion 🎵, to the right you see one of my many playlists ➡️</h3>
     <a href="något.rtf" class="btn" download="">
       Download CV
       <i class='bx bx-download'></i>
     </a>
    </div>
-   <div class="about-text">
-     <p>Hi! I am Hampus Isebring. A Front End Developer Student, Junior UX | UI Designer & Junior Service Designer.</p>
+   <div class="about-me-text">
+     <!-- <p>Hi! I am Hampus Isebring. A Front End Developer Student, Junior UX | UI Designer & Junior Service Designer.</p>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae consectetur iure quisquam illum vero facilis suscipit dolores molestiae, rem commodi ratione necessitatibus magni dicta sequi corrupti amet qui id.</p>
-     <p>Contact me for further information or just to chat.</p>
+     <p>Contact me for further information or just to chat.</p> -->
+     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1e9qhFHfEW3QeyDiSwHaPk?utm_source=generator&theme=0" 
+     width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
    </div>
   </div>
  </section>
@@ -138,7 +139,7 @@
       <h2>Front End Development</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt vel, modi esse ea nulla voluptatibus dolores expedita voluptatem deleniti quis earum amet molestiae beatae deserunt facilis? Temporibus, consequuntur aut? Ipsum!</p>
     </div>
-      <div class="skills-box">
+      <div class="skills-box flex">
         <i class='bx bxl-sketch'></i>
         <h2>UX | UI Design</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt vel, modi esse ea nulla voluptatibus dolores expedita voluptatem deleniti quis earum amet molestiae beatae deserunt facilis? Temporibus, consequuntur aut? Ipsum!</p>
@@ -158,9 +159,9 @@
   <!--PORTFOLIO CONTENT-->
   <div class="portfolio-content">
     <div class="portfolio-box">
-      <img src="/imgs/portfolio-1.PNG" alt="A picture of a project" class="portfolio-img">
+      <img src="/imgs/portfolio-1.PNG" alt="A picture of my design portfolio in Figma." class="portfolio-img">
       <!--OVERLAY-->
-      <div class="portfolio-overlay">
+      <div class="portfolio-overlay flex">
          <h2 class="heading-font">Front End Projects</h2> 
          <a href="#">
           <i class='bx bx-link' ></i>
@@ -171,9 +172,9 @@
     <div class="portfolio-box">
       <img src="./imgs/portfolio-projects.png" alt="A picture of a project" class="portfolio-img">
       <!--OVERLAY-->
-      <div class="portfolio-overlay">
-         <h2 class="heading-font">Digital Design Projects</h2>
-         <p class="paragraph-color">Click the link to see my Figma portfolio in Swedish</p> 
+      <div class="portfolio-overlay flex">
+         <h2 class="heading-font">Figma portfolio (UX | UI) projects</h2>
+         <!-- <p class="paragraph-color">Click the link to see my Figma portfolio in Swedish</p>  -->
          <a href="https://www.figma.com/proto/MXf4oJ7sJUWP8UbyzpWEZo/CV-%2B-Portfolio?page-id=0%3A1&node-id=253%3A20&viewport=933%2C1413%2C0.16&scaling=scale-down&starting-point-node-id=253%3A20&hide-ui=1" target="_blank">
           <i class='bx bx-link' ></i>
          </a>
@@ -183,7 +184,7 @@
     <div class="portfolio-box">
       <img src="/imgs/portfolio-1.PNG" alt="A picture of a project" class="portfolio-img">
       <!--OVERLAY-->
-      <div class="portfolio-overlay">
+      <div class="portfolio-overlay flex">
          <h2 class="heading-font">Front End Development</h2> 
          <a href="#">
           <i class='bx bx-link' ></i>
@@ -194,7 +195,7 @@
     <div class="portfolio-box">
       <img src="/imgs/portfolio-1.PNG" alt="A picture of a project" class="portfolio-img">
       <!--OVERLAY-->
-      <div class="portfolio-overlay">
+      <div class="portfolio-overlay flex">
          <h2 class="heading-font">Front End Development</h2> 
          <a href="#">
           <i class='bx bx-link' ></i>
@@ -205,14 +206,14 @@
   </section>
 
   <!--FOOTER-->
-  <section class="footer container" id="footer">
+  <section class="footer container flex" id="footer">
   <div class="social">
    <a href="mailto:hampus.isebring@gmail.com"><i class='bx bx-envelope'></i></a>
    <a href="#"><i class='bx bxl-discord-alt'></i></a>
    <a href="#"><i class='bx bxl-linkedin' ></i></a>
    <a href="#"><i class='bx bxl-github' ></i></a>
   </div>
- <div class="footer-links">
+ <div class="footer-links flex">
   <a href="#">Privacy</a>
   <a href="#">Terms of Use</a>
   <a href="#">Disclaimer</a>
