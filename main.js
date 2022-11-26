@@ -60,7 +60,7 @@ function headerBackgroundChange() {
 }
 
 function arrowBacktoTop() {
-  let arrowScrollTop = document.querySelector(".scroll-top");
+  let arrowScrollTop = document.querySelector(".scroll-back-to-top");
   window.addEventListener("scroll", () => {
     arrowScrollTop.classList.toggle("scroll-active", window.scrollY >= 400);
   });
