@@ -1,0 +1,68 @@
+@media (max-width: 450px) {
+  .swiper {
+    width: 400px;
+    height: 200px;
+  }
+  .home {
+    min-height: 485px;
+    padding-top: 5rem;
+  }
+  .home-img {
+    width: 8rem;
+    height: 11rem;
+  }
+  /* .home-img img {
+   width: 8rem;
+   height: 11rem;
+  } */
+  .homepage-text h2 {
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+  }
+  .home-text p br {
+    display: contents;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .about-data h2 {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    font-weight: 600;
+    margin: 0.6rem 0;
+  }
+  .footer-links {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper {
+    width: 350px;
+    height: 200px;
+  }
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .swiper {
+    width: 310px;
+    height: 180px;
+  }
+  .logo {
+    height: 4rem;
+    width: 8rem;
+  }
+  .homepage-text h2 {
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+  }
+
+  #typewriter, #typewriter2 {
+    font-size: 1.4rem;
+  }
+  
+}
