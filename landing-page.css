@@ -56,8 +56,8 @@ body {
 }
 
 .name-heading {
-  position: absolute;
-  top: 20%;
+  position: fixed;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 80px;
@@ -65,9 +65,19 @@ body {
   font-weight: 700;
   white-space: nowrap;
   font-family: "Manrope", sans-serif;
+   overflow: hidden; 
+
+  animation:
+  fading 5s infinite
 }
+   @keyframes fading {
+    0% { width: 0 }
+    80% { width: 80% }
+    100% { width: 100% }
+  } 
 
 /* MEDIA QUERIES */
+
 @media screen and (max-width: 950px) {
   #front-page-text {
     white-space: nowrap;
@@ -103,6 +113,7 @@ body {
   }
 }
 /*MOBILE*/
+
 @media screen and (max-width: 420px) {
   .name-heading {
     font-size: 30px;
