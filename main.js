@@ -73,7 +73,7 @@ window.onscroll = () => {
 
 
 function logoReturnHome() {
-  location.href = "homepage.html";
+  location.href = "#home";
 }
 
 function headerBackgroundChange() {
