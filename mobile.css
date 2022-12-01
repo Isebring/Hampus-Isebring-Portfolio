@@ -1,20 +1,16 @@
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .swiper {
-    width: 400px;
-    height: 200px;
+    width: 25rem;
+    height: 12.5rem;
   }
   .home {
-    min-height: 485px;
+    min-height: 30.313rem;
     padding-top: 5rem;
   }
   .home-img {
     width: 8rem;
     height: 11rem;
   }
-  /* .home-img img {
-   width: 8rem;
-   height: 11rem;
-  } */
   .homepage-text h2 {
     font-size: 2.1rem;
     line-height: 3.2rem;
@@ -37,10 +33,10 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 416px) {
   .swiper {
-    width: 350px;
-    height: 200px;
+    width: 21.875rem;
+    height: 12.5rem;
   }
   .navbar {
     width: 100%;
@@ -49,13 +45,10 @@
 
 @media (max-width: 370px) {
   .swiper {
-    width: 310px;
-    height: 180px;
+    width: 19.375rem;
+    height: 11.25rem;
   }
-  .logo {
-    height: 4rem;
-    width: 8rem;
-  }
+ 
   .homepage-text h2 {
     font-size: 2.5rem;
     line-height: 3.4rem;
@@ -63,6 +56,14 @@
 
   #typewriter, #typewriter2 {
     font-size: 1.4rem;
-  }
-  
+  } 
+}
+
+@media (max-width: 330px) {
+.swiper {
+  width: 18rem;
+}
+#typewriter, #typewriter2 {
+  font-size: 1.1rem;
+} 
 }
