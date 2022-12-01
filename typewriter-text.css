@@ -3,40 +3,46 @@
 
 #typewriter {
   overflow: hidden;
-  border-right: .10em solid #614692;
+  border-right: 0.1em solid #614692;
   white-space: nowrap;
   font-size: 1.6rem;
   width: 0;
-  animation: 
-   typing 6s steps(30, end) both infinite,
-   blink .8s infinite;
-   font-family: 'Manrope', sans-serif;
+  animation: typing 6s steps(30, end) both infinite, blink 0.8s infinite;
+  font-family: "Manrope", sans-serif;
 }
 
 #typewriter2 {
   overflow: hidden;
-  border-right: .10em solid #614692;
+  border-right: 0.1em solid #614692;
   white-space: nowrap;
   font-size: 1.6rem;
   width: 0;
-  animation: 
-   typing 5s steps(40, end) both infinite, 
-   blink .8s infinite;
-   animation-delay: 5s; 
-   font-family: 'Manrope', sans-serif;
+  animation: typing 5s steps(40, end) both infinite, blink 0.8s infinite;
+  animation-delay: 5s;
+  font-family: "Manrope", sans-serif;
 }
 
 @keyframes typing {
-  0% { width: 0 }
-  80% { width: 100% }
-  100% { width: 100% }
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  from { border-color: transparent }
-  to { border-color: #614692; }
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #614692;
+  }
 }
 
 #stop-cursor {
   display: inline-block;
-} 
+}
