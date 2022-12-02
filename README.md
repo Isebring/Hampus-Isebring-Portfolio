@@ -12,7 +12,7 @@ I wanted to showcase some pictures from my life to give a quick view of things t
 [Live Demo here](https://isebring.github.io/..).
 
 **Notes:**
-*As for now it is responsive until about 300 px*
-*I have used particles.js and swiper.js libraries for this assignment*
+*As for now it is responsive until about 300 px.*
+*I have used particles.js and swiper.js libraries for this assignment.*
 
 
