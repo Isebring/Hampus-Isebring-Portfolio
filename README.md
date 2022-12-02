@@ -9,7 +9,7 @@ On this webpage I wanted to showcase some pictures from my life to give the visi
 *The purpose of the landing page is to simply give a quick insight of my roles as front end developer student and junior ux | ui designer. If that catches the users' interest a simple click leads them to the main page.*
 
 
-[Live Demo here](https://isebring.github.io/..).
+[Live Demo here](https://isebring.github.io//Hampus-Isebring-Portfolio/).
 
 **Notes:**
 *As for now the webpage is responsive until about 300 px.*
