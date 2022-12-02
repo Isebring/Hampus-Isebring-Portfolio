@@ -12,10 +12,12 @@ function addEventListeners() {
   removeSidebarOnScroll();
 }
 /**
- * This function is imported from the Swiper.js library and serves as the slider/carousel containing images
+ * This function is imported from the Swiper.js library with adjustments from me to fit my needs. It serves as the slider/carousel containing images
  */
 function SwiperSlider() {
-  if(this.Swiper === undefined) {return};
+  if (this.Swiper === undefined) {
+    return;
+  }
   const swiper = new Swiper(".swiper", {
     effect: "creative",
     creativeEffect: {
