@@ -1,4 +1,4 @@
-# Hampus Isebrings Portfolio
+# Hampus Isebring's Portfolio
 
 #### In this assignment I have created a personal portfolio webpage where I present myself, my skills and projects I have worked on. As for now I only link to my design projects in a separate Figma portfolio.
 
