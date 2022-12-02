@@ -12,7 +12,8 @@ On this webpage I wanted to showcase some pictures from my life to give the visi
 [Live Demo here](https://isebring.github.io/..).
 
 **Notes:**
-*As for now it is responsive until about 300 px.*
+*As for now the webpage is responsive until about 300 px.*
+
 *I have used particles.js and swiper.js libraries for this assignment.*
 
 
