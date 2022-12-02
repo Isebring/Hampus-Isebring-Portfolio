@@ -14,11 +14,7 @@ header {
 
 .header-active {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#deefff+0,98bede+100;Blue+3D+%2310 */
-  background: linear-gradient(
-    to bottom,
-    #deefff 0%,
-    #98bede 100%
-  ); 
+  background: linear-gradient(to bottom, #deefff 0%, #98bede 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-9 */
   transition: 0.4s;
 }
@@ -31,7 +27,7 @@ header {
 
 .logo {
   height: 4rem;
-  width: 10rem; 
+  width: 10rem;
   cursor: pointer;
 }
 
