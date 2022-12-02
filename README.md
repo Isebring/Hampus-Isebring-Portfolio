@@ -1,8 +1,8 @@
 # Hampus Isebrings Portfolio
 
-#### In this assignment I have created a personal portfolio webpage where I present myself, my skills and projects I have worked on. As for now I only link to my Figma portfolio.
+#### In this assignment I have created a personal portfolio webpage where I present myself, my skills and projects I have worked on. As for now I only link to my design projects in a separate Figma portfolio.
 
-I wanted to showcase some pictures from my life to give a quick view of things that are valuable to me. Klässbol, which I show in two of the images is a place that has been in my family for a long time. To all my relatives, it is a place to recover from the daily stress of life and just reflect and spend time together.
+On this webpage I wanted to showcase some pictures from my life to give the visitor an insight of what matters to me. Klässbol, which I show in two of the images, is a place that has been a part of my family for generations. To me and all my relatives, it is a place to visit for recovery and relief from the daily stresses of life. Take some time to just reflect and spend time together.
 
 *I decided not to rewrite my whole CV as I have one already. Instead I focused on presenting other things about me and implemented a download button where my CV can be downloaded as PDF.*
 
