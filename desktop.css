@@ -105,11 +105,11 @@ p {
   color: var(--body-color);
   background: var(--container-color);
   border-radius: 1.5rem;
+  transition: 0.4s all ease ease-in-out;
 }
 
 .scroll-back-to-top .bx:hover {
   background: var(--box-color);
-  transition: 0.4s all ease ease-in-out;
 }
 
 .scroll-active {
@@ -157,7 +157,7 @@ p {
   border-radius: 0.4rem;
   margin-top: 1rem;
   font-family: "Poppins", sans-serif;
-  transition: 0.4s all ease ease-in-out;
+  transition: 0.8s all ease ease-in-out;
 }
 
 .btn .bx {
@@ -165,7 +165,8 @@ p {
 }
 
 .btn:hover {
-  background: var(--box-color);
+  box-shadow: rgba(34, 105, 236, 0.4) 5px 5px, rgba(34, 105, 236, 0.3) 10px 10px, rgba(34, 105, 236, 0.2) 15px 15px, rgba(34, 105, 236, 0.1) 20px 20px, rgba(34, 105, 236, 0.05) 25px 25px;
+  
 }
 
 .about-text p {
