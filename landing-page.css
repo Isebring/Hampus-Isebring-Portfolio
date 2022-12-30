@@ -10,7 +10,9 @@
 
 body {
   background: #090a1a;
+  overflow-y: hidden;
 }
+
 
 #front-page-text {
   position: absolute;
@@ -53,13 +55,6 @@ body {
   left: 50%;
 }
 
-#bg {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
 .name-heading {
   position: absolute;
   left: 50%;
@@ -97,10 +92,40 @@ body {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 8000px) {
+
+  #enter-site-button {
+    bottom: 50%;
+  }
+  #enter-site-button:hover {
+    bottom: 52%;
+  }
+
+  #front-page-text {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    top: 35%;
+
+ }
+}
+
+
+@media (max-width: 2000px) {
+
+  #enter-site-button {
+    bottom: 42%;
+  }
+  #enter-site-button:hover {
+    bottom: 44%;
+  }
+
+}
+
 @media screen and (max-width: 1180px) {
   #front-page-text {
     white-space: nowrap;
   }
+
 }
 @media screen and (max-width: 700px) {
   .name-heading {
