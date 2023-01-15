@@ -165,8 +165,9 @@ p {
 }
 
 .btn:hover {
-  box-shadow: rgba(34, 105, 236, 0.4) 5px 5px, rgba(34, 105, 236, 0.3) 10px 10px, rgba(34, 105, 236, 0.2) 15px 15px, rgba(34, 105, 236, 0.1) 20px 20px, rgba(34, 105, 236, 0.05) 25px 25px;
-  
+  box-shadow: rgba(34, 105, 236, 0.4) 5px 5px, rgba(34, 105, 236, 0.3) 10px 10px,
+    rgba(34, 105, 236, 0.2) 15px 15px, rgba(34, 105, 236, 0.1) 20px 20px,
+    rgba(34, 105, 236, 0.05) 25px 25px;
 }
 
 .about-text p {
@@ -204,6 +205,11 @@ p {
   color: var(--accent-color);
 }
 
+.columbo {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 20rem;
+}
 /* MEDIA QUERIES */
 
 @media (max-width: 990px) {

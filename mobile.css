@@ -68,4 +68,7 @@
   #typewriter2 {
     font-size: 1.1rem;
   }
+  .responsiveText {
+    font-size: 21px;
+  }
 }
