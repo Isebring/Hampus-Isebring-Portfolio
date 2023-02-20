@@ -1,0 +1,83 @@
+@media (max-width: 775px) {
+  .logo {
+    height: 4rem;
+    width: 10rem;
+  }
+  .homepage-content {
+    min-height: 31.25rem;
+    padding-top: 6rem;
+  }
+  .homepage-text h3 {
+    font-size: 1rem;
+  }
+  .swiper {
+    width: 31.25rem;
+    height: 15.625rem;
+  }
+  .homepage-text h2 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .homepage-text p {
+    font-size: 0.825rem;
+  }
+  .portfoliio-box {
+    height: 15.313rem;
+  }
+  .hamburger-menu-icon {
+    display: flex;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 18.75rem;
+    height: 100vh;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem 1.25rem;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .toggle-sidebar {
+    right: 0;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .nav-link {
+    display: block;
+    margin: 1rem 0;
+  }
+  .skills-content,
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 635px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .swiper {
+    width: 28.125rem;
+    height: 12.5rem;
+  }
+}
+.about-data {
+  font-size: 0.9rem;
+  justify-content: center;
+}
+
+.about-data h2 {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+
+@media (max-width: 607px) {
+  .footer-links {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}

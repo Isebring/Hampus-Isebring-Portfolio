@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090a1a;
+  overflow-y: hidden;
+}
+
+#front-page-text {
+  position: absolute;
+  top: 40%;
+  color: white;
+  font-size: 1.25rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+#enter-site-button {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  position: absolute;
+  width: 12rem;
+  height: 3rem;
+  bottom: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  border-style: none;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  clip-path: polygon(
+    2rem 0,
+    calc(100% + 2rem) 0,
+    calc(100% - 2rem) 100%,
+    -2rem 100%
+  );
+}
+
+#enter-site-button:hover {
+  background-color: #647bff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.3);
+  color: white;
+  cursor: pointer;
+  bottom: 34%;
+  left: 50%;
+}
+
+.name-heading {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+  white-space: nowrap;
+  font-family: "Manrope", sans-serif;
+  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+
+  animation: fading 6s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.container {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.astronaut {
+  position: relative;
+  width: 150px;
+  height: 300px;
+}
+
+.helmet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: silver;
+}
+
+.visor {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden;
+}
+.visor::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 20% 20%, white, transparent);
+  animation: reflection 2s linear infinite;
+}
+
+@keyframes reflection {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 8000px) {
+  #enter-site-button {
+    bottom: 50%;
+  }
+  #enter-site-button:hover {
+    bottom: 52%;
+  }
+
+  #front-page-text {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    top: 35%;
+  }
+}
+
+@media (max-width: 2000px) {
+  #enter-site-button {
+    bottom: 42%;
+  }
+  #enter-site-button:hover {
+    bottom: 44%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  #front-page-text {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 700px) {
+  .name-heading {
+    font-size: 3.125rem;
+  }
+
+  #front-page-text {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  #enter-site-button {
+    bottom: 41%;
+  }
+  #enter-site-button:hover {
+    bottom: 43%;
+  }
+}
+
+/*TABLET*/
+
+@media screen and (max-width: 470px) {
+  .name-heading {
+    font-size: 2.5rem;
+  }
+
+  #front-page-text {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    top: 35%;
+  }
+  #enter-site-button {
+    bottom: 40%;
+  }
+  #enter-site-button:hover {
+    bottom: 43%;
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 420px) {
+  .name-heading {
+    font-size: 1.875rem;
+  }
+
+  #front-page-text {
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  #enter-site-button {
+    bottom: 45%;
+  }
+  #enter-site-button:hover {
+    bottom: 47%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .name-heading {
+    font-size: 1.5rem;
+  }
+  #front-page-text {
+    font-size: 0.6rem;
+    white-space: nowrap;
+    top: 30%;
+  }
+  #enter-site-button {
+    bottom: 50%;
+  }
+  #enter-site-button:hover {
+    bottom: 52%;
+  }
+}

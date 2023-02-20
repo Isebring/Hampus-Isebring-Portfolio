@@ -9,12 +9,12 @@
   <!--CSS FILES-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="./typewriter-text.css".css">
-  <link rel="stylesheet" href="./header+home.css">
-  <link rel="stylesheet" href="./portfolio+skills.css">
-  <link rel="stylesheet" href="./desktop.css">
-  <link rel="stylesheet" href="./tablet.css">
-  <link rel="stylesheet" href="./mobile.css">
+  <link rel="stylesheet" href="./css/typewriter-text.css".css">
+  <link rel="stylesheet" href="./css/header+home.css">
+  <link rel="stylesheet" href="./css/portfolio+skills.css">
+  <link rel="stylesheet" href="./css/desktop.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/mobile.css">
 
   <!--JAVASCRIPT FILES-->
   <script src="./main.js"></script>
@@ -32,14 +32,14 @@
   <!--NAV-->
   <div class="nav container flex">
     <!--LOGO-->
-    <img src="./imgs/hampus-logo.png" onclick= logoReturnHome() class="logo" tabindex="0" alt="logotype with a icon of a pen and ruler. Below is a text of the name Hampus Isebring. It ends with the text Design for all"></a>
+    <a href="#home" title="Homepage of Hampus Isebring's portfolio"><img src="./imgs/hampus-logo.png" class="logo" alt="logotype with a icon of a pen and ruler. Below is a text with the name Hampus Isebring. It ends with the text Design for all"></a>
     <!--NAVBAR-->
     <nav class="navbar flex">
-    <li><a href="#home" class="nav-link"><i class='bx bx-home-alt navicons'></i>Home</a></li>
-    <li><a href="#about" class="nav-link"><i class='bx bx-info-circle navicons' ></i>About</a></li>
-    <li><a href="#skills" class="nav-link"><i class='bx bx-edit-alt navicons'></i>Skills</a></li>
-    <li><a href="#portfolio" class="nav-link"><i class='bx bx-briefcase navicons' ></i>Portfolio</a></li>
-    <li><a href="#footer" class="nav-link"><i class='bx bx-user navicons' ></i>Contact</a></li>
+    <li><a href="#home" aria-label="Back to the top of the homepage" class="nav-link"><i class='bx bx-home-alt navicons'></i>Home</a></li>
+    <li><a href="#about" aria-label="Jump to the about content of the webpage"  class="nav-link"><i class='bx bx-info-circle navicons' ></i>About</a></li>
+    <li><a href="#skills" aria-label="Jump to the skills content of the webpage" class="nav-link"><i class='bx bx-edit-alt navicons'></i>Skills</a></li>
+    <li><a href="#portfolio" aria-label="Jump to the portfolio content of the webpage" class="nav-link"><i class='bx bx-briefcase navicons' ></i>Portfolio</a></li>
+    <li><a href="#footer" aria-label="Jump to the contact information of the webpage" class="nav-link"><i class='bx bx-user navicons' ></i>Contact</a></li>
     </nav>
 
       <!--HAMBURGER MENU ICON-->
@@ -47,7 +47,6 @@
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
-    
         </div>
       </div>
     </header> 
@@ -73,9 +72,9 @@
 
        <!--SOCIAL ICONS-->
        <div class="social flex">
-        <a href="https://discord.com/users/alagos#3330" target="blank"><i class='bx bxl-discord-alt'></i></a>
-        <a href="https://www.linkedin.com/in/hampus-isebring-6947b0230/" target="blank"><i class='bx bxl-linkedin' ></i></a>
-        <a href="https://github.com/Isebring" target="blank"><i class='bx bxl-github' ></i></a>
+        <a href="https://discord.com/users/alagos#3330" role="img" aria-label="Contact Hampus on Discord" target="blank"><i class='bx bxl-discord-alt'></i></a>
+        <a href="https://www.linkedin.com/in/hampus-isebring-6947b0230/" role="img" aria-label="Contact Hampus on LinkedIn" target="blank"><i class='bx bxl-linkedin' ></i></a>
+        <a href="https://github.com/Isebring" role="img" aria-label="Contact Hampus on Github" target="blank"><i class='bx bxl-github' ></i></a>
        </div>
      </div>
    </div>
@@ -87,20 +86,23 @@
   
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;">Me in Prague
-        <img src="./imgs/in-pague-city.jpg" width="600px" alt="A picture of me walking in the city of Prague">
+      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;"><h3 style="padding-bottom: .2rem">Me in Prague</h3>
+        <img src="./imgs/in-prague-city.jpg" alt="A picture of me walking in the city of Prague">
       </div>
-      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;">Me & my brother in Klässbol
-        <img src="./imgs/brothers.jpg" width="600px" alt="A picture of me and my brother playing guitar">
+      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;"><h3 style="padding-bottom: .2rem">Me and my Brother</h3>
+        <img src="./imgs/brothers.jpg" alt="A picture of me and my brother playing guitar">
       </div>
-      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;">My family's cats
-        <img src="./imgs/familjens-katter.jpg" width="600px" alt="A picture of two cats sitting on a table">
+      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;"> <h3 style="padding-bottom: .2rem">My cats</h3>
+        <img src="./imgs/familjens-katter.jpg" alt="A picture of two cats sitting on a table">
       </div>
-      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;">Klässbol, Värmland
-        <img src="./imgs/klassbol.jpg" width="600px" alt="A picture of Klässbol, located in Värmland, Sweden. The picture shows firs, the lake Glafsfjorden and rocks">
+      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;"> <h3 style="padding-bottom: .2rem">Klässbol, Värmland</h3>
+        <img src="./imgs/klassbol.jpg" alt="A picture of Klässbol, located in Värmland, Sweden. The picture shows firs, the lake Glafsfjorden and rocks">
       </div>
-      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;">Ön, Halmstad
-        <img src="./imgs/ön-halmstad.jpg" width="600px" alt="This is a picture of Ön in Halmstad. The picture is taken from the parking lot overlooking the lake Torvsjön">
+      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;"> <h3 style="padding-bottom: .2rem"> Ön, Halmstad</h3>
+        <img src="./imgs/ön-halmstad.jpg" alt="This is a picture of Ön in Halmstad. The picture is taken from the parking lot overlooking the lake Torvsjön">
+      </div>
+      <div class="swiper-slide" style="font-family:Arial, Helvetica, sans-serif;"> <h3 style="padding-bottom: .2rem"> Sora, Kingdom Hearts</h3>
+        <img src="./imgs/sora.jpg" alt="A picture of Sora, the protagonist of Kingdom hearts video game series that I drew">
       </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -123,7 +125,7 @@
     <br>
     <h3 class="heading-font">Music is a big passion 🎵, <br> Here is one of my many playlists.</h3>
     <h3 class="heading-font"><br>Instead of repeating everything from my CV you can download it as PDF with the button below.</h3>
-    <a href="./cv_hampus_isebring - 2022.pdf" class="btn" download="">
+    <a href="./cv_hampus_isebring - 2023.pdf" class="btn" download="">
       Download CV
       <i class='bx bx-download'></i>
     </a>
@@ -146,7 +148,7 @@
     <div class="skills-box">
       <i class='bx bx-code-alt'></i>
       <h2 class="heading-font">Front End Development</h2>
-      <p>HTML, CSS, JavaScript. <br> I currently have more experience in HTML and CSS but are training on JavaScript and I am getting to know TypeScript. </p>
+      <p>HTML, CSS, JavaScript & TypeScript. <br> I have most experience in HTML, CSS and JavaScript. I am getting to know TypeScript better though, and am also learning libraries such as React. </p>
     </div>
       <div class="skills-box flex">
         <i class='bx bxl-sketch'></i>
@@ -177,6 +179,7 @@
       <!--OVERLAY-->
       <div class="portfolio-overlay flex">
          <h2 class="heading-font">Figma Portfolio</h2> 
+         <p class="flex center portfolio-text">This is where I present my case studies in design.</p>
          <a href="https://www.figma.com/proto/MXf4oJ7sJUWP8UbyzpWEZo/CV-%2B-Portfolio?page-id=0%3A1&node-id=253%3A20&viewport=933%2C1413%2C0.16&scaling=scale-down&starting-point-node-id=253%3A20&hide-ui=1" target="_blank">
           <i class='bx bx-link' ></i>
          </a>
@@ -184,11 +187,12 @@
     </div>
   
     <div class="portfolio-box">
-      <img src="./imgs/frontend-projects-in-progress.png" alt="A picture indicating it is a work in progress" class="portfolio-img">
+      <img src="./imgs/frostbite-frenzy.PNG" alt="A picture of the game Frostbite Frenzy. Created by 6 front end developer students including Hampus Isebring" class="portfolio-img">
       <!--OVERLAY-->
       <div class="portfolio-overlay flex">
-         <h2 class="heading-font">Front End Projects</h2>
-         <a href="#">
+         <h2 class="heading-font">Frostbite Frenzy</h2>
+         <p class="flex center portfolio-text">Me and 5 other students created this game using P5.js and TypeScript.</p>
+         <a href="https://frostbitefrenzy.netlify.app/" target="_blank">
           <i class='bx bx-link' ></i>
          </a>
       </div>
@@ -222,21 +226,24 @@
   <section class="footer container flex" id="footer">
     <h2 class="heading-font responsiveText">“Just One More Thing...”</h2>
     <img class="columbo" src="./imgs/columbo.jpg" alt="A picture of lieutenant Columbo from American crime drama television series Columbo.">
-    <p>Feel free to get in touch through the icons below. I am always up <br> for discussing design, coding or something completely else.. maybe life?</p>
+    <p>I am just such a <span class="color">big fan of the Columbo series..</span> I just had to put that reference here.</p>
+    <p>Feel free to get in touch <span class="color">through the icons below..</span> I am always up for a chat or discussion, no matter the subject!</p>
+  
   <div class="social">
-   <a href="mailto:hampus.isebring@gmail.com"><i class='bx bx-envelope'></i></a>
-   <a href="https://discord.com/users/alagos#3330" target="blank"><i class='bx bxl-discord-alt'></i></a>
-   <a href="https://www.linkedin.com/in/hampus-isebring-6947b0230/" target="blank"><i class='bx bxl-linkedin' ></i></a>
-   <a href="https://github.com/Isebring" target="blank"><i class='bx bxl-github' ></i></a>
+   <a href="mailto:hampus.isebring@gmail.com" role="img" aria-label="Contact Hampus on e-mail" ><i class='bx bx-envelope'></i></a>
+   <a href="https://discord.com/users/alagos#3330" role="img" aria-label="Contact Hampus on Discord" target="blank"><i class='bx bxl-discord-alt'></i></a>
+   <a href="https://www.linkedin.com/in/hampus-isebring-6947b0230/" role="img" aria-label="Contact Hampus on LinkedIn" target="blank"><i class='bx bxl-linkedin' ></i></a>
+   <a href="https://github.com/Isebring" role="img" aria-label="Contact Hampus on Github" target="blank"><i class='bx bxl-github' ></i></a>
   </div>
+
  <div class="footer-links flex ">
-  <a href="#" class="heading-font"> <i class='bx bx-pen navicons'></i>Junior UX | UI Designer</a>
-  <a href="#" class="heading-font"> <i class='bx bx-code-curly navicons' ></i>Front End Developer Student</a>
-  <a href="#" class="heading-font"> <i class='bx bx-map navicons'></i>Halmstad</a>
+  <a href="#" role="img" aria-hidden="true" class="heading-font"> <i class='bx bx-pen navicons'></i>Junior UX | UI Designer</a>
+  <a href="#" role="img" aria-hidden="true" class="heading-font"> <i class='bx bx-code-curly navicons' ></i>Front End Developer Student</a>
+  <a href="#" role="img" aria-hidden="true" class="heading-font"> <i class='bx bx-map navicons'></i>Halmstad</a>
  </div>
 
  <!--COPYRIGHT-->
- <p>&#169; Hampus Isebring</p>
+ <p>&#169; Hampus Isebring ☕</p>
   </section>
 
 </body>
