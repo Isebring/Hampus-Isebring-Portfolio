@@ -26,6 +26,7 @@
   height: 90px;
   background-color: rgb(252, 235, 235);
   box-shadow: 0px 0px 10px 5px silver;
+  z-index: -1;
 }
 
 .arm.left {
@@ -50,6 +51,7 @@
   height: 75px;
   background-color: whitesmoke;
   box-shadow: 0px 0px 10px 5px silver;
+  z-index: -1;
 }
 
 .leg.left {
@@ -94,6 +96,7 @@
   border-radius: 1rem;
   box-shadow: 0px 0px 10px 5px silver;
   animation: flame 1s infinite;
+  z-index: -2;
 }
 
 .astronaut {

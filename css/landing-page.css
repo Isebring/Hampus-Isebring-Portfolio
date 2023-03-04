@@ -175,12 +175,6 @@ body {
     font-size: 1rem;
     white-space: nowrap;
   }
-  #enter-site-button {
-    bottom: 41%;
-  }
-  #enter-site-button:hover {
-    bottom: 43%;
-  }
 }
 
 /*TABLET*/
@@ -194,12 +188,6 @@ body {
     font-size: 0.875rem;
     white-space: nowrap;
     top: 35%;
-  }
-  #enter-site-button {
-    bottom: 40%;
-  }
-  #enter-site-button:hover {
-    bottom: 43%;
   }
 }
 
@@ -232,9 +220,9 @@ body {
     top: 30%;
   }
   #enter-site-button {
-    bottom: 50%;
+    bottom: 55%;
   }
   #enter-site-button:hover {
-    bottom: 52%;
+    bottom: 57%;
   }
 }
