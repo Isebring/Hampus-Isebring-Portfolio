@@ -154,10 +154,10 @@ body {
 
 @media (max-width: 2000px) {
   #enter-site-button {
-    bottom: 42%;
+    bottom: 47%;
   }
   #enter-site-button:hover {
-    bottom: 44%;
+    bottom: 49%;
   }
 }
 
