@@ -107,6 +107,7 @@ p {
   position: fixed;
   bottom: -100%;
   right: 1.5rem;
+  z-index: 1;
 }
 
 .scroll-back-to-top .bx {
