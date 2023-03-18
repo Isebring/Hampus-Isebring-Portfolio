@@ -27,6 +27,7 @@
 </a>
 
 <!--HEADER-->
+<a href="#main-content" class="skip-link" tabindex="0">Skip to main content</a>
 
 <header>
   <!--NAV-->
@@ -52,10 +53,11 @@
     </header> 
 
   <!--HOMEPAGE MAIN-->
-<section class="home container flex" id="home">
+<main id="main-content" aria-label="Main content">
+ <section class="home container flex" id="home">
   <div class="homepage-content flex">
    <div class="home-img">
-     <img src="./imgs/hampus.jpg" alt="A picture of my logotype containing a ruler and pen, my name, and the text Design for all">
+     <img src="./imgs/hampus.jpg" alt="A picture of me, Hampus Isebring">
    </div>
     <div class="homepage-text flex">
       <h3 class="flex">Hello there</h3>
@@ -125,10 +127,16 @@
   <div class="about-content">
    <div class="about-data">
     <h2 class="heading-font">Things I like <i class='bx bx-heart'></i></h2> 
-    <p>I enjoy gaming 🎮<br> our nature 🌲 <br> playing the guitar 🎸<br> and animals 🐾.</p>
+    <p>I enjoy gaming <i class='bx bx-joystick'></i><br>nature and animals <i class='bx bx-leaf'></i> <br> playing the guitar <i class='bx bx-music'></i><br> and thinking outside the box <i class='bx bx-package'></i>.</p>
     <br>
-    <h3 class="heading-font">Music is a big passion <i class='bx bx-music'></i></h3><p>Here I attach one of my many playlists on Spotify.<p>
-    <p><br>Instead of repeating everything from my CV you can download it as PDF with the button below.<p>
+    <h3 class="heading-font">Music is a big passion <i class='bx bx-album'></i></h3><p>I attach one of my many playlists from Spotify if you're curious.</p>
+      <hr style="margin: 1rem 0; border-color: #f7f6f6;"/> 
+      <h3 class="heading-font">One of my all time favorite songs:</h3>
+   
+    <p> <i>The Wind</i> by Yusuf / Cat Stevens.</p>
+    <img src="./imgs/the teaser and the firecat.jpg" style="transform: scale(0.75);" alt="Album cover for Yusuf/Cat Steven's album Teaser and the Firecat"> 
+    <hr style="border-color: #f7f6f6;"/>  
+    <p><br>By the way..instead of repeating everything from my CV you can download it as PDF with the button below.</p>
     <a href="./cv_hampus_isebring - 2023.pdf" class="btn" download="">
       Download CV
       <i class='bx bx-download'></i>
@@ -136,7 +144,7 @@
    </div>
    <div class="about-me-text">
      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1e9qhFHfEW3QeyDiSwHaPk?utm_source=generator&theme=0" 
-     width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+     width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" tabindex="-1"></iframe>
    </div>
   </div>
  </section>
@@ -226,6 +234,7 @@
     </div>
   </div>
   </section>
+  </main>
 
   <!--FOOTER-->
   <section class="footer container flex" id="footer">
@@ -235,16 +244,16 @@
     <p>Feel free to get in touch <span class="color">through the icons below..</span> I am always up for a chat or discussion, no matter the subject!</p>
   
   <div class="social">
-   <a href="mailto:hampus.isebring@gmail.com" role="img" aria-label="Contact Hampus on e-mail" ><i class='bx bx-envelope'></i></a>
+   <a href="mailto:hampus.isebring@gmail.com" role="img" aria-label="Contact Hampus on e-mail" ><i class='bx bx-mail-send'></i></a>
    <a href="https://discord.com/users/alagos#3330" role="img" aria-label="Contact Hampus on Discord" target="blank"><i class='bx bxl-discord-alt'></i></a>
    <a href="https://www.linkedin.com/in/hampus-isebring-6947b0230/" role="img" aria-label="Contact Hampus on LinkedIn" target="blank"><i class='bx bxl-linkedin' ></i></a>
    <a href="https://github.com/Isebring" role="img" aria-label="Contact Hampus on Github" target="blank"><i class='bx bxl-github' ></i></a>
   </div>
 
  <div class="footer-links flex ">
-  <a href="#" role="img" aria-hidden="true" class="heading-font"> <i class='bx bx-pen navicons'></i>Junior UX | UI Designer</a>
-  <a href="#" role="img" aria-hidden="true" class="heading-font"> <i class='bx bx-code-curly navicons' ></i>Front End Developer Student</a>
-  <a href="#" role="img" aria-hidden="true" class="heading-font"> <i class='bx bx-map navicons'></i>Halmstad</a>
+  <a href="#" role="img" aria-hidden="true" tabindex="-1" class="heading-font"> <i class='bx bx-pen navicons'></i>Junior UX | UI Designer</a>
+  <a href="#" role="img" aria-hidden="true" tabindex="-1" class="heading-font"> <i class='bx bx-code-curly navicons' ></i>Front End Developer Student</a>
+  <a href="#" role="img" aria-hidden="true" tabindex="-1" class="heading-font"> <i class='bx bx-map navicons'></i>Halmstad</a>
  </div>
 
  <!--COPYRIGHT-->

@@ -1,3 +1,22 @@
+/* SKIP TO MAIN */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.skip-link:focus {
+  top: 0;
+  z-index: 1;
+  width: 9rem;
+  height: 1.5rem;
+}
+
 /* HEADER */
 
 header {
@@ -39,7 +58,7 @@ header {
   padding: 0.25rem 0.5rem;
   border-radius: 0.2rem;
   color: var(--text-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   transition: 0.8ms linear;
 }
@@ -124,11 +143,11 @@ header {
   column-gap: 0.5rem;
   font-size: 1.1rem;
   color: var(--accent-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .homepage-text h3::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   transform: translate(-50%);
@@ -139,7 +158,7 @@ header {
 }
 
 .homepage-text h3::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   transform: translate(-50%);
@@ -152,7 +171,7 @@ header {
 .homepage-text h2 {
   font-size: 3.5rem;
   line-height: 4.8rem;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 .homepage-text p {
