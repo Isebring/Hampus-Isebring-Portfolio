@@ -67,7 +67,7 @@
        <h4 id="typewriter2">I am a junior UI | UX designer.</h4>
       </div>
       <br>
-      <p style="text-align: left">
+      <p style="text-align: left;">
         I am <span class="color"> a front end developer student</span> at Medieinstitutet in Gothenburg. I am also a newly graduated <span class="color">junior UX | UI designer</span> from Halmstad University. I have a strong passion for creating digital solutions that <span class="color">supports people in their lives.</span> 
         I believe that my background from design combined with my enhanced knowledge and understanding of how developers work can contribute to a <span class="color">broad understanding</span> of the whole process of creating digital artefacts, from start to finish.
         
@@ -77,7 +77,8 @@
        </p>
 
        <!--SOCIAL ICONS-->
-       <div class="social flex">
+       <img style="z-index: -2; position: absolute; mix-blend-mode: difference;" src="./imgs/circlebg.svg" />
+       <div style="position: relative;" class="social flex">
         <a href="https://discord.com/users/alagos#3330" aria-label="Contact Hampus on Discord" target="blank"><i class='bx bxl-discord-alt'></i></a>
         <a href="https://www.linkedin.com/in/hampus-isebring-6947b0230/" aria-label="Contact Hampus on LinkedIn" target="blank"><i class='bx bxl-linkedin' ></i></a>
         <a href="https://github.com/Isebring" aria-label="Contact Hampus on Github" target="blank"><i class='bx bxl-github' ></i></a>
@@ -129,12 +130,16 @@
     <h2 class="heading-font">Things I like <i class='bx bx-heart'></i></h2> 
     <p>I enjoy gaming <i class='bx bx-joystick'></i><br>nature and animals <i class='bx bx-leaf'></i> <br> playing the guitar <i class='bx bx-music'></i><br> and thinking outside the box <i class='bx bx-package'></i>.</p>
     <br>
-    <h3 class="heading-font">Music is a big passion <i class='bx bx-album'></i></h3><p>I attach one of my many playlists from Spotify if you're curious.</p>
+    <h3 class="heading-font">Music is a big passion <i class='bx bx-album'></i></h3><p>There are so many songs I cherish, I name one of them below.</p>
       <hr style="margin: 1rem 0; border-color: #f7f6f6;"/> 
       <h3 class="heading-font">One of my favorite songs:</h3>
    
     <p> <i>The Wind</i> by Yusuf / Cat Stevens.</p>
-    <img src="./imgs/the teaser and the firecat.jpg" style="transform: scale(0.75);" alt="Album cover for Yusuf/Cat Steven's album Teaser and the Firecat"> 
+    <div style="position: relative; display: inline-block;">
+      <img src="./imgs/the teaser and the firecat.jpg" style="transform: scale(0.75); transition: 0.4s linear; filter: brightness(1); cursor: pointer;" onmouseover="this.style.filter='brightness(0.4)'" onmouseout="this.style.filter='brightness(1)' "onclick="window.open('https://open.spotify.com/track/0wEo4mwfs6tXYgCem9m9wP?go=1&sp_cid=134e384b9aed3c0474bea295eaef9310&utm_source=embed_player_p&utm_medium=desktop&nd=1', '_blank')" 
+      alt="Album cover for Yusuf/Cat Steven's album Teaser and the Firecat">
+      <i class='bx bxl-spotify' style="position: absolute; top: 30%; left: 50%; transform: translate(-30%, -50%); font-size: 3.5rem; color:green"></i>
+    </div>
     <hr style="border-color: #f7f6f6;"/>  
     <p><br>By the way.. instead of repeating everything from my CV you can download it as PDF with the button below.</p>
     <a href="./cv_hampus_isebring - 2023.pdf" class="btn" download="">
@@ -143,14 +148,15 @@
     </a>
    </div>
    <div class="about-me-text">
-     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1e9qhFHfEW3QeyDiSwHaPk?utm_source=generator&theme=0" 
-     width="100%" height="380" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" tabindex="-1"></iframe>
-     <iframe style="border-radius:12px; margin-top: 2rem" src="https://open.spotify.com/embed/track/0wEo4mwfs6tXYgCem9m9wP?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+     <img src="./imgs/blob1.svg" />
+     <img src="./imgs/blob2.svg" />
    </div>
   </div>
  </section>
+ <img style="z-index: -1; position: absolute; mix-blend-mode: difference; height:35%;" src="./imgs/wave.svg" />
 
  <!--SKILLS-->
+
 <section class="skills container" id="skills">
 
   <!--HEADING-->
@@ -262,10 +268,9 @@
   <a href="#" aria-hidden="true" tabindex="-1" class="heading-font"> <i class='bx bx-code-curly navicons' ></i>Front End Developer Student</a>
   <a href="#" aria-hidden="true" tabindex="-1" class="heading-font"> <i class='bx bx-map navicons'></i>Halmstad</a>
  </div>
-
+ 
  <!--COPYRIGHT-->
  <p>&#169; Hampus Isebring ☕</p>
   </section>
-
 </body>
 </html>
