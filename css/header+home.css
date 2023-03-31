@@ -121,11 +121,9 @@ header {
 }
 
 .home-img {
-  width: 10rem;
-  height: 15rem;
-  border-radius: 15%;
+  width: 30rem;
+  height: 28rem;
   overflow: hidden;
-  margin-bottom: 2rem;
   object-fit: cover;
   object-position: center;
 }
@@ -141,7 +139,7 @@ header {
   position: relative;
   align-items: center;
   column-gap: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--accent-color);
   font-family: 'Poppins', sans-serif;
 }
@@ -175,7 +173,7 @@ header {
 }
 
 .homepage-text p {
-  font-size: 0.938rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
