@@ -23,7 +23,7 @@
 </head>
 <body>
   <!--SCROLL BACK TO TOP-->
-  <a href="#home" class="scroll-back-to-top">
+  <a href="#home" aria-label="Click this arrow to get back to the top of the webpage" class="scroll-back-to-top">
   <i class="bx bx-up-arrow-alt"></i>
 </a>
 
@@ -36,13 +36,13 @@
     <!--LOGO-->
     <a href="#home" title="Homepage of Hampus Isebring's portfolio"><img src="./imgs/hampus-logo.png" class="logo" alt="logotype with a icon of a pen and ruler. Below is a text with the name Hampus Isebring. It ends with the text Design for all"></a>
     <!--NAVBAR-->
-    <nav class="navbar flex">
+    <ul class="navbar flex">
     <li><a href="#home" aria-label="Back to the top of the homepage" class="nav-link"><i class='bx bx-home-alt navicons'></i>Home</a></li>
     <li><a href="#about" aria-label="Jump to the about content of the webpage"  class="nav-link"><i class='bx bx-info-circle navicons' ></i>About</a></li>
     <li><a href="#skills" aria-label="Jump to the skills content of the webpage" class="nav-link"><i class='bx bx-edit-alt navicons'></i>Skills</a></li>
     <li><a href="#portfolio" aria-label="Jump to the portfolio content of the webpage" class="nav-link"><i class='bx bx-briefcase navicons' ></i>Portfolio</a></li>
     <li><a href="#footer" aria-label="Jump to the contact information of the webpage" class="nav-link"><i class='bx bx-user navicons' ></i>Contact</a></li>
-    </nav>
+    </ul>
 
       <!--HAMBURGER MENU ICON-->
       <div class="hamburger-menu-icon flex">
@@ -90,6 +90,7 @@
 
   <!--SWIPER SLIDER-->
  <section> 
+  <img style="position: absolute; z-index: -1; height: 60%" src="./imgs/Curved Line.svg" alt="Curved lines which are a decoration on the webpage">
   <div class="swiper">
   
     <div class="swiper-wrapper">
@@ -143,7 +144,7 @@
     </div>
     <hr style="border-color: #f7f6f6;"/>  
     <p><br>By the way.. instead of repeating everything from my CV you can download it as PDF with the button below.</p>
-    <a href="./cv_hampus_isebring - 2023.pdf" class="btn" download="">
+    <a href="./cv_hampus_isebring - 2023.pdf" aria-label="Download Hampus Isebrings CV" class="btn" download="">
       Download CV
       <i class='bx bx-download'></i>
     </a>
@@ -154,7 +155,7 @@
    </div>
   </div>
  </section>
- <img style="z-index: -1; position: absolute; height:35%;" src="./imgs/wave.svg" alt="A wave placed as a decoration on the webpage" />
+ <img style="z-index: -1; position: absolute; height: 70%" src="./imgs/Wave Line.svg" alt="A line of waves placed as a decoration on the webpage" />
 
  <!--SKILLS-->
 
@@ -192,7 +193,8 @@
   </section>
 
   <!--PORTFOLIO-->
-<section class="portfolio container" id="portfolio">
+  <img style="position: absolute; z-index: -1" src="./imgs/Rect Light.svg" alt="A set of rectangles places as a decoration on the webpage">
+<section style="position: relative" class="portfolio container" id="portfolio">
 
   <!--HEADING-->
   <h2 class="heading">Portfolio</h2>
@@ -206,7 +208,7 @@
       <div class="portfolio-overlay flex">
          <h2 class="heading-font">Figma Portfolio</h2> 
          <p class="flex center portfolio-text">This is where I present my case studies in design.</p>
-         <a href="https://www.figma.com/proto/MXf4oJ7sJUWP8UbyzpWEZo/CV-%2B-Portfolio?page-id=0%3A1&node-id=253%3A20&viewport=933%2C1413%2C0.16&scaling=scale-down&starting-point-node-id=253%3A20&hide-ui=1" target="_blank">
+         <a href="https://www.figma.com/proto/MXf4oJ7sJUWP8UbyzpWEZo/CV-%2B-Portfolio?page-id=0%3A1&node-id=253%3A20&viewport=933%2C1413%2C0.16&scaling=scale-down&starting-point-node-id=253%3A20&hide-ui=1" aria-label="Visit Hampus Isebrings Figma portfolio" target="_blank">
           <i style="margin-top: .5rem" class='bx bx-link' ></i>
          </a>
       </div>
@@ -218,10 +220,10 @@
       <div class="portfolio-overlay flex">
          <h2 class="heading-font">Frostbite Frenzy</h2>
          <p class="flex center portfolio-text">Me and 5 fellow students created this game using P5.js and TypeScript.</p>
-         <a href="https://frostbitefrenzy.netlify.app/" target="_blank">
+         <a href="https://frostbitefrenzy.netlify.app/" aria-label="Visit the game Frostbite Frenzy's webpage" target="_blank">
           <i style="margin-top: .5rem" class='bx bx-link' ></i>
          </a>
-         <a href="https://github.com/Isebring/Frostbite-Frenzy" target="_blank">
+         <a href="https://github.com/Isebring/Frostbite-Frenzy" aria-label="Go to the Github repository of Frostbite Frenzy" target="_blank">
           <i style="margin-top: 1rem" class='bx bxl-github' ></i>
          </a>
       </div>
@@ -233,10 +235,10 @@
       <div class="portfolio-overlay flex">
          <h2 class="heading-font">GHEDb</h2> 
          <p class="flex center portfolio-text">Me and 2 fellow students created a movie application using React and TypeScript.</p>
-         <a href="https://ghedb.netlify.app/" target="_blank">
+         <a href="https://ghedb.netlify.app/" aria-label="Visit GHEDb, a webpage for movies and tv-series" target="_blank">
           <i style="margin-top: .5rem"  class='bx bx-link' ></i>
          </a>
-         <a href="https://github.com/Isebring/GHE-Movie-App" target="_blank">
+         <a href="https://github.com/Isebring/GHE-Movie-App" aria-label="Go to the Github repository of GHEDb" target="_blank">
           <i style="margin-top: 1rem" class='bx bxl-github' ></i>
          </a>
       </div>
@@ -247,7 +249,7 @@
       <!--OVERLAY-->
       <div class="portfolio-overlay flex">
          <h2 class="heading-font">Front End Projects</h2> 
-         <a href="#">
+         <a href="#" aria-hidden="true" tabindex="-1">
           <i class='bx bx-link' ></i>
          </a>
       </div>
@@ -278,7 +280,7 @@
  
  <!--COPYRIGHT-->
  <p>&#169; Hampus Isebring ☕</p>
+ <img style="position: absolute; height: 50%; z-index: -1" src="./imgs/Shapes2.svg" alt="A group of shapes with a slow animation whose purpose is as a decoration on the webpage">
   </section>
-  <img src="./imgs/wave 2.svg" alt="A wave placed as a decoration on the webpage">
 </body>
 </html>
