@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+#container {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 35%;
+  top: 0;
+  bottom: 0;
+}
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Manrope';
+  font-size: 7rem;
+  color: #045f9a;
+  text-align: center;
+  user-select: none;
+}
+
+.landing-img { 
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+}

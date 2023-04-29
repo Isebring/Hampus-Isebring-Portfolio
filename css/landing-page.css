@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -8,28 +8,17 @@
 }
 
 body {
-  background: #090a1a;
   overflow-y: hidden;
-}
-
-.front-page-text {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  color: white;
-  font-size: 1.1rem;
-  transform: translate(-50%, -50%);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  background: #f8f8f8;
 }
 
 .enter-site-button {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: white;
   position: absolute;
   width: 12rem;
   height: 3rem;
-  top: 45%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -38,12 +27,13 @@ body {
   font-weight: 600;
   text-decoration: none;
   text-align: center;
-  clip-path: polygon(
+  border-radius: 0.5rem;
+  /* clip-path: polygon(
     2rem 0,
     calc(100% + 2rem) 0,
     calc(100% - 2rem) 100%,
     -2rem 100%
-  );
+  ); */
 }
 
 .enter-site-button:hover {
@@ -52,10 +42,23 @@ body {
   color: white;
   cursor: pointer;
   left: 50%;
-  top: 43%;
+  top: 68%;
 }
 
-.name-heading {
+/* NOT IN USE AT MOMENT */
+
+/* .front-page-text {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  color: white;
+  font-size: 1.1rem;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+} */
+
+/* .name-heading {
   position: absolute;
   left: 50%;
   top: 10%;
@@ -64,7 +67,7 @@ body {
   color: white;
   font-weight: 700;
   white-space: nowrap;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
 
   animation: fading 6s infinite;
@@ -79,16 +82,16 @@ body {
   100% {
     opacity: 100%;
   }
-}
+} */
 
-.container {
+/* .container {
   position: absolute;
   bottom: 25%;
   left: 50%;
   transform: translate(-50%, 50%);
-}
+} */
 
-.astronaut {
+/* .astronaut {
   position: relative;
   width: 150px;
   height: 300px;
@@ -115,7 +118,7 @@ body {
   overflow: hidden;
 }
 .visor::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -15px;
   left: -15px;
@@ -133,7 +136,9 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
+
+/* __________________________________________________________________________________________________________________________________________________________ /*
 
 /* MEDIA QUERIES */
 
@@ -161,64 +166,89 @@ body {
     white-space: nowrap;
   }
 }
-
-/*TABLET*/
-
-@media screen and (max-width: 470px) {
-  .name-heading {
-    font-size: 2.5rem;
-    top: 20%;
-  }
-
-  .front-page-text {
-    font-size: 0.875rem;
-    white-space: nowrap;
-    top: 35%;
+@media screen and (max-width: 520px) {
+  #text1,
+  #text2 {
+    font-size: 5rem;  
   }
 
   .enter-site-button {
-    width: 10rem;
-    height: 2.5rem;
-    font-size: 0.7rem;
-  }
-}
-
-/*MOBILE*/
-
-@media screen and (max-width: 420px) {
-  .name-heading {
-    font-size: 1.875rem;
-    top: 20%;
-  }
-
-  .front-page-text {
-    font-size: 0.75rem;
-    white-space: nowrap;
-  }
-  .enter-site-button {
-    bottom: 45%;
-    width: 10rem;
-    height: 2.5rem;
-    font-size: 0.7rem;
+    top: 68%;
   }
   .enter-site-button:hover {
-    bottom: 47%;
+    top: 68%;
   }
-}
 
-@media screen and (max-width: 380px) {
-  .name-heading {
-    font-size: 1.5rem;
+  /*TABLET*/
+
+  @media screen and (max-width: 470px) {
+    .name-heading {
+      font-size: 2.5rem;
+      top: 20%;
+    }
+
+    .front-page-text {
+      font-size: 0.875rem;
+      white-space: nowrap;
+      top: 35%;
+    }
+
+    .enter-site-button {
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 0.7rem;
+      top: 65%;
+    }
+    .enter-site-button:hover {
+      top: 63%;
+    }
   }
-  .front-page-text {
-    font-size: 0.65rem;
-    white-space: nowrap;
-    top: 30%;
+
+  /*MOBILE*/
+
+  @media screen and (max-width: 420px) {
+    .name-heading {
+      font-size: 1.875rem;
+      top: 20%;
+    }
+
+    .front-page-text {
+      font-size: 0.75rem;
+      white-space: nowrap;
+    }
+    .enter-site-button {
+      top: 55%;
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 0.7rem;
+    }
+    .enter-site-button:hover {
+      top: 53%;
+    }
+    #text1,
+    #text2 {
+      font-size: 4.5rem;
+    }
   }
-  .enter-site-button {
-    bottom: 55%;
-  }
-  .enter-site-button:hover {
-    bottom: 57%;
+
+  @media screen and (max-width: 380px) {
+    .name-heading {
+      font-size: 1.5rem;
+    }
+    .front-page-text {
+      font-size: 0.65rem;
+      white-space: nowrap;
+      top: 30%;
+    }
+    .enter-site-button {
+      top: 55%;
+    }
+    .enter-site-button:hover {
+      top: 53%;
+    }
+    #text1,
+    #text2 {
+      font-size: 4rem;
+    }
   }
 }

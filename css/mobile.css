@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 385px) {
   .swiper {
     width: 19.375rem;
     height: 11.25rem;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 350px) {
   .swiper {
     width: 18rem;
   }
