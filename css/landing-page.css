@@ -178,6 +178,20 @@ body {
   .enter-site-button:hover {
     top: 68%;
   }
+}
+  @media screen and (orientation: landscape) and (max-height: 500px) {
+    #text1,
+    #text2 {
+     font-size: 3.5rem;
+     top: 55%;
+    }
+    .enter-site-button {
+      top: 82%;
+    }
+    .enter-site-button:hover {
+      top: 80%;
+    }
+  } 
 
   /*TABLET*/
 
@@ -251,4 +265,4 @@ body {
       font-size: 4rem;
     }
   }
-}
+
