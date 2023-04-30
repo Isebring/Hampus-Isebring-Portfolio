@@ -142,12 +142,16 @@ body {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 2000px) {
+@media (min-width: 2000px) {
   .enter-site-button {
-    bottom: 47%;
+    top: 50%;
   }
   .enter-site-button:hover {
-    bottom: 49%;
+    top: 51%;
+  }
+  #text,
+  #text2 {
+    top: -20%;
   }
 }
 
@@ -169,7 +173,7 @@ body {
 @media screen and (max-width: 520px) {
   #text1,
   #text2 {
-    font-size: 5rem;  
+    font-size: 5rem;
   }
 
   .enter-site-button {
@@ -179,93 +183,92 @@ body {
     top: 68%;
   }
 }
-  @media screen and (orientation: landscape) and (max-height: 500px) {
-    #text1,
-    #text2 {
-     font-size: 3rem;
-     top: 55%;
-    }
-    .enter-site-button {
-      top: 82%;
-    }
-    .enter-site-button:hover {
-      top: 80%;
-    }
-    .landing-img {
-      margin-top: 0.1rem;
-    }
-  } 
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  #text1,
+  #text2 {
+    font-size: 3rem;
+    top: 55%;
+  }
+  .enter-site-button {
+    top: 82%;
+  }
+  .enter-site-button:hover {
+    top: 80%;
+  }
+  .landing-img {
+    margin-top: 0.1rem;
+  }
+}
 
-  /*TABLET*/
+/*TABLET*/
 
-  @media screen and (max-width: 470px) {
-    .name-heading {
-      font-size: 2.5rem;
-      top: 20%;
-    }
-
-    .front-page-text {
-      font-size: 0.875rem;
-      white-space: nowrap;
-      top: 35%;
-    }
-
-    .enter-site-button {
-      width: 10rem;
-      height: 2.5rem;
-      font-size: 0.7rem;
-      top: 65%;
-    }
-    .enter-site-button:hover {
-      top: 63%;
-    }
+@media screen and (max-width: 470px) {
+  .name-heading {
+    font-size: 2.5rem;
+    top: 20%;
   }
 
-  /*MOBILE*/
-
-  @media screen and (max-width: 420px) {
-    .name-heading {
-      font-size: 1.875rem;
-      top: 20%;
-    }
-
-    .front-page-text {
-      font-size: 0.75rem;
-      white-space: nowrap;
-    }
-    .enter-site-button {
-      top: 55%;
-      width: 10rem;
-      height: 2.5rem;
-      font-size: 0.7rem;
-    }
-    .enter-site-button:hover {
-      top: 53%;
-    }
-    #text1,
-    #text2 {
-      font-size: 4.5rem;
-    }
+  .front-page-text {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    top: 35%;
   }
 
-  @media screen and (max-width: 380px) {
-    .name-heading {
-      font-size: 1.5rem;
-    }
-    .front-page-text {
-      font-size: 0.65rem;
-      white-space: nowrap;
-      top: 30%;
-    }
-    .enter-site-button {
-      top: 55%;
-    }
-    .enter-site-button:hover {
-      top: 53%;
-    }
-    #text1,
-    #text2 {
-      font-size: 4rem;
-    }
+  .enter-site-button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+    top: 65%;
+  }
+  .enter-site-button:hover {
+    top: 63%;
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 420px) {
+  .name-heading {
+    font-size: 1.875rem;
+    top: 20%;
   }
 
+  .front-page-text {
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  .enter-site-button {
+    top: 55%;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+  .enter-site-button:hover {
+    top: 53%;
+  }
+  #text1,
+  #text2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .name-heading {
+    font-size: 1.5rem;
+  }
+  .front-page-text {
+    font-size: 0.65rem;
+    white-space: nowrap;
+    top: 30%;
+  }
+  .enter-site-button {
+    top: 55%;
+  }
+  .enter-site-button:hover {
+    top: 53%;
+  }
+  #text1,
+  #text2 {
+    font-size: 4rem;
+  }
+}
